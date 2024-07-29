@@ -1,0 +1,43 @@
+html {
+    height: 100%;
+}
+
+body {
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    background-image: url('../images/space.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-style: normal;
+    margin: 0;
+    overflow: hidden
+}
+
+img {
+    position: absolute;
+}
+
+.object {
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 760s;
+    z-index: -1;
+}
+
+@keyframes ani-rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

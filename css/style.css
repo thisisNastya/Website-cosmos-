@@ -1,0 +1,152 @@
+#selection0 {
+    background-image: url('../images/space2.png');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+    #selection1 {
+    background-image: url(../images/1640011165_1-hdpic-club-p-raketa-na-zastavku-1.jpg);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection2 {
+    background-image: url('../images/sputnik.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection3 {
+    background-image: url('../images/1680891971_sneg-top-p-gagarin-kosmos-kartinki-krasivo-5.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection4 {
+    background-image: url('../images/1662151013_61-kartinkin-net-p-aleksei-leonov-v-otkritom-kosmose-kosmos-66.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection5 {
+    background-image: url('../images/3384382-e1555516557986.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection6 {
+    background-image: url('../images/viking-1-adli-uzay-araci.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection7 {
+    background-image: url('../images/maxresdefault.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection8 {
+    background-image: url('../images/2155260-2816x1584-desktop-hd-hubble-background-photo.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+#selection9 {
+    background-image: url('../images/1920x1200-5446431-telescope-wallpapers.jpg');
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: content-box !important;
+}
+.section {
+    background-size: cover;
+    /*text-align: center;*/
+}
+/*
+.content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    scroll-snap-align: start !important;
+} */
+.stylehistorytext1 {
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #ffffff; /* Цвет и толщина границы */
+    background-color: rgba(255,255, 255, 0.5); /* Полупрозрачный фон */
+    color: black; /* Цвет текста */
+    width: 450px;
+    border-radius: 15px;
+}
+.stylehistorytext2 {
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #ffffff; /* Цвет и толщина границы */
+    background-color: rgba(255,255, 255, 0.5); /* Полупрозрачный фон */
+    color: black; /* Цвет текста */
+    width: 450px;
+    right: -700px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: content-box !important;
+}

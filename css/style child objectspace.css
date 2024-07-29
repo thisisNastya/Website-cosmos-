@@ -1,0 +1,685 @@
+﻿/*стиль для дочерних в объектах*/
+
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+}
+
+.side {
+    flex: 1;
+    background-color: #f8f8f8;
+
+}
+
+.center-rectangle {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-left: 190px; /* Левый отступ */
+    margin-right: 190px; /* Правый отступ */
+    padding: 20px; /* Отступы внутри блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень для выделения */
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+/*кнопка назад*/
+.buttonback {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    color: #5f5ee5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+    outline-color: #5f5ee5;
+    outline-width: 2px;
+    outline-style: solid;
+}
+.buttonback:hover {
+    background: #5f5ee5;
+    color: white;
+}
+/*оглавление*/
+.oglavlenie {
+    color: black;
+    left: 130px;
+    position: center !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 60px; /*минус 200 px*/
+}
+
+.oglavlenie ol {
+    counter-reset: item;
+}
+
+.oglavlenie li {
+    display: block;
+    position: relative;
+    counter-increment: item;
+}
+
+.oglavlenie li::before {
+    content: counters(item, ".") ". ";
+    position: absolute;
+    left: -2em;
+}
+li{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+/*для списков нумерованных большие цифры*/
+
+ol.spisok2 {
+    list-style-type: none;
+    counter-reset: num;
+    margin: 0 0 0 60px;
+    padding: 15px 0 5px 0;
+    font-size: 16px;
+}
+
+    ol.spisok2 li {
+        position: relative;
+        margin: 0 0 0 0;
+        padding: 0 0 15px 0;
+    }
+
+        ol.spisok2 li:before {
+            content: counter(num);
+            counter-increment: num;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: -60px;
+            width: 50px;
+            color: #5f5ee5;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+.blockopredelenie {
+    border-style: dashed;
+    outline-width: 4px;
+    border-radius: 15px;
+    border-color: #ec5b5b;
+    padding: 9px;
+    position: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-right: 60px; /*минус 200 px*/
+    margin-left: 60px; /*минус 200 px*/
+    margin-top: 30px;
+}
+    .blockopredelenie:before {
+        content: "\f02e"; /* код иконки info */
+        font-family: FontAwesome;
+        font-size: 21px;
+        left: 259px; /* позиция иконки */
+        position: static;
+        color: #ec5b5b;
+    }
+.text-center {
+    position: center;
+    margin-bottom: 20px;
+    margin-left: 40px; /*минус 200 px*/
+    margin-right: 40px /*минус 200 px*/
+}
+.text-center2 {
+    position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 60px; /*минус 200 px*/
+    margin-left: 60px; /*минус 200 px*/
+}
+.Zagolovok {
+    position: center;
+    margin-right: 0px; /*минус 200 px*/
+    margin-left: 0px; /*минус 200 px*/
+    margin-top: 55px;
+}
+.Zagolovok2 {
+    position: center;
+    margin-right: 0px; /*минус 200 px*/
+    margin-left: 0px; /*минус 200 px*/
+    margin-top: 25px;
+}
+.Zagolovok-text {
+    position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px; /*минус 200 px*/
+    margin-left: 0px; /*минус 200 px*/
+}
+
+/*примечание info*/
+.exam_03 {
+    border-style: dashed;
+    outline-width: 4px;
+    border-color: #5cbe7f;
+    border-radius: 15px;
+    padding: 10px;
+    position: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-right: 260px;
+    margin-left: 260px;
+    margin-top: 30px;
+    /*background: rgba(236,236, 236, 0.5);*/
+}
+    .exam_03:before {
+        content: "\f129"; /* код иконки info */
+        font-family: FontAwesome;
+        font-size: 21px;
+        left: 259px; /* позиция иконки */
+        position: static;
+        color: #5cbe7f;
+    }
+
+    /*блок характеристика планет*/
+.containerplanet {
+    background-color: rgba(239, 239, 239, 0.8); /* Цвет общего блока */
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 0px; /*минус 200 px*/
+    margin-left: 0px; /*минус 200 px*/
+    display: flex;
+    align-items: center
+}
+
+.imageplanet {
+    /*background-color: rgba(221, 221, 221, 0.8); /* Цвет заголовка */
+    background-image: url('../images/solnce.png');
+    width: 250px;
+    height: 250px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*меркурий*/
+.imageplanet2 {
+    background-image: url('../images/pngwing.com-2.png');
+    width: 253px;
+    height: 253px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*венера*/
+.imageplanet3 {
+    background-image: url('../images/pngwing.com-3.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*земля*/
+.imageplanet4 {
+    background-image: url('../images/pngwing.com-4.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*марс*/
+.imageplanet5 {
+    background-image: url('../images/pngwing.com-7.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*юпитер*/
+.imageplanet6 {
+    background-image: url('../images/gas-kvas-com-p-planeta-yupiter-na-prozrachnom-fone-dlya-d-9.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*сатурн*/
+.imageplanet7 {
+    background-image: url('../images/pngwing.com-6.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*уран*/
+.imageplanet8 {
+    background-image: url('../images/uranus-png-transparent.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+
+}
+/*нептун*/
+.imageplanet9 {
+    background-image: url('../images/neptunepng.parspng.com_.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*плутон*/
+.imageplanet10 {
+    background-image: url('../images/pngwing.com-pluton.png');
+    width: 220px;
+    height: 220px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+
+
+
+.zagolovokplanet {
+    background-color: rgba(210, 210, 210, 0.8); /* Цвет заголовка */
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.contentplanet {
+    padding-left:250px;
+}
+ul.krug {
+    list-style-type: square;
+}
+
+.krug {
+    background-color: rgba(230, 230, 230, 0.8);
+    border-radius: 15px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+/*блок характеристика спутников*/
+.containersputnik {
+    background-color: rgba(239, 239, 239, 0.8); /* Цвет общего блока */
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-right: 96px; /*минус 200 px*/
+    margin-left: 96px; /*минус 200 px*/
+    display: flex;
+    align-items: center
+}
+/*луна*/
+.imagesputnik {
+    background-image: url('../images/pngwing.com-5.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*фобос*/
+.imagesputnik1 {
+    background-image: url('../images/фобос.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*деймос*/
+.imagesputnik2 {
+    background-image: url('../images/деймос.png');
+    width: 110px;
+    height: 110px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+    padding-left: 20px;
+}
+/*Ио*/
+.imagesputnik3 {
+    background-image: url('../images/io_highest_resolution_true_color1.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Европа*/
+.imagesputnik4 {
+    background-image: url('../images/pngwing.com-8.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Ганимед*/
+.imagesputnik5 {
+    background-image: url('../images/pngwing.com-9.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Каллисто*/
+.imagesputnik6 {
+    background-image: url('../images/1677670457_bogatyr-club-p-kallisto-sputnik-foni-pinterest-12.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*мимас*/
+.imagesputnik7 {
+    background-image: url('../images/pngwing.com-77.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Энцелад*/
+.imagesputnik8 {
+    background-image: url('../images/391-3915415_enceladus-moon-saturnsmoon-planet-freetoedit-transparent-enceladus-moon-2.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Тефия*/
+.imagesputnik9 {
+    background-image: url('../images/pia18317-saturnmoon-tethys-cassini-20150411.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Диона*/
+.imagesputnik10 {
+    background-image: url('../images/pia19650_main.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Рея*/
+.imagesputnik11 {
+    background-image: url('../images/1200px-rhea_hi-res_pia07763.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Титан*/
+.imagesputnik12 {
+    background-image: url('../images/titan_in_true_color_by_kevin_m._gill.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+/*Япет*/
+.imagesputnik13 {
+    background-image: url('../images/iapetus_as_seen_by_the_cassini_probe_-_20071008.png');
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+    display: flex;
+    position: absolute;
+    display: inline;
+    background-size: cover;
+}
+
+.zagolovoksputnik {
+    background-color: rgba(210, 210, 210, 0.8); /* Цвет заголовка */
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contentsputnik {
+    padding-left: 185px;
+}
+
+ul.krugsputnik {
+    list-style-type: square;
+}
+
+.krugsputnik {
+    background-color: rgba(230, 230, 230, 0.8);
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+/*стиль для выпадающего списка*/
+details {
+    padding: 10px;
+    background-color: rgba(239, 239, 239, 0.8);
+    border-radius: 5px;
+    margin-right: 0px; /*минус 200 px*/
+    margin-left: 0px; /*минус 200 px*/
+    margin-bottom: 30px;
+}
+summary {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+table {
+    width: 650px;
+    border-top: 7px solid rgb(131,131,131);
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    width: 100%;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.table-container, .table-container2 {
+    margin: auto;
+    max-width: 1200px;
+    /* min-height: 100vh;*/
+    overflow: scroll;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead tr {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    height: 1px;
+}
+
+th {
+    font-weight: bold;
+    height: inherit;
+    padding: 0;
+}
+
+    th:not(:first-of-type) {
+        border-left: 1px solid #ddd;
+    }
+
+    th button {
+        background-color: #eee;
+        border: none;
+        cursor: pointer;
+        display: block;
+        font: inherit;
+        height: 100%;
+        margin: 0;
+        /*min-width: max-content;*/
+        padding: 0.5rem 1rem;
+        position: relative;
+        text-align: left;
+        width: 100%;
+    }
+
+        th button::after {
+            position: absolute;
+            right: 0.5rem;
+        }
+
+        th button[data-dir="asc"]::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpolygon points='0, 0 8,0 4,8 8' fill='%23818688'/%3E%3C/svg%3E");
+        }
+
+        th button[data-dir="desc"]::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpolygon points='4 0,8 8,0 8' fill='%23818688'/%3E%3C/svg%3E");
+        }
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+/*кнопка стрелка вверх*/
+
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #5f5ee5;
+    /* расстояние от правого края окна браузера */
+    right: 60px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 15px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 15px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 66px;
+    /* высота элемента */
+    height: 50px;
+}
+
+    .btn-up::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: transparent no-repeat center center;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+    }
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: #512da8; /* цвет заднего фона при наведении */
+    }
+}
