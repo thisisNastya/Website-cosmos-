@@ -52,8 +52,8 @@ You can use the project for educational purposes, but do not copy it.
 ## Установка и запуск / Installation and Setup
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/username/First-site-2024.git
-   cd First-site-2024
+   git clone https://github.com/username/Website-cosmos.git
+   cd Website-cosmos
    ```
 
 2. **Откройте проект в Visual Studio:**
