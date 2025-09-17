@@ -43,11 +43,8 @@ You can use the project for educational purposes, but do not copy it.
 - `/wwwroot/lib/`: Внешние библиотеки (jQuery, Bootstrap и др.).
 - `Program.cs`: Точка входа в приложение ASP.NET.
 - `README.md`: Это руководство.
-- `appsettings.Development.json`: Настройки для разработки.
-- `appsettings.json`: Основные настройки приложения.
-- `libman.json`: Управление клиентскими библиотеками.
-- `First-site.csproj`: Файл проекта ASP.NET.
-- `First-site.csproj.user`: Пользовательские настройки проекта.
+- `One-site.csproj`: Файл проекта ASP.NET.
+- `One-site.csproj.user`: Пользовательские настройки проекта.
 
 ## Установка и запуск / Installation and Setup
 1. **Клонируйте репозиторий:**
@@ -58,7 +55,7 @@ You can use the project for educational purposes, but do not copy it.
 
 2. **Откройте проект в Visual Studio:**
    - Запустите Visual Studio 2022 (или новее).
-   - Откройте файл `First-site.csproj`.
+   - Откройте файл `One-site.csproj`.
 
 3. **Восстановите пакеты:**
    - В Visual Studio: Tools → NuGet Package Manager → Restore NuGet Packages.
